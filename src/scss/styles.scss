@@ -15,6 +15,7 @@ html * {
 
 $custom-fs-1-125rem: 1.125rem;
 $custom-fs-2-125rem: 2.125rem;
+$custom-fs-2-375rem: 2.375rem;
 $custom-fs-3-625rem: 3.625rem;
 
 // Responsive font classes
@@ -24,6 +25,14 @@ $custom-fs-3-625rem: 3.625rem;
 
   @include media-breakpoint-up("lg") {
     font-size: $custom-fs-1-125rem;
+  }
+}
+
+.fs-2-375-to-3 {
+  font-size: $custom-fs-2-375rem;
+
+  @include media-breakpoint-up("lg") {
+    font-size: 3rem;
   }
 }
 
@@ -143,5 +152,9 @@ $custom-fs-3-625rem: 3.625rem;
 
   .banner-frontpage img {
     min-height: 600px;
+  }
+
+  .frontpage-text-content {
+    max-width: 75%;
   }
 }
