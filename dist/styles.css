@@ -11848,6 +11848,24 @@ html * {
   font-family: "DM Sans", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
+.fs-1-to-1-125 {
+  font-size: 1rem;
+}
+@media (min-width: 992px) {
+  .fs-1-to-1-125 {
+    font-size: 1.125rem;
+  }
+}
+
+.fs-2-125-to-fs-3-625 {
+  font-size: 2.125rem;
+}
+@media (min-width: 992px) {
+  .fs-2-125-to-fs-3-625 {
+    font-size: 3.625rem;
+  }
+}
+
 .header-colour {
   color: #1e2245;
 }
@@ -11875,12 +11893,72 @@ html * {
   min-height: 300px;
 }
 
+.request-button {
+  appearance: none;
+  background-color: #008c95;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 5px;
+  box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "DM Sans", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 8px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.request-button:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.request-button:hover {
+  background-color: #036167;
+}
+
+.request-button:focus {
+  box-shadow: rgba(3, 97, 103, 0.4) 0 0 0 3px;
+  outline: none;
+}
+
+.request-button:active {
+  background-color: #036167;
+  box-shadow: rgba(20, 70, 32, 0.2) 0 1px 0 inset;
+}
+
+.gradient-container {
+  position: relative;
+}
+.gradient-container:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(48, 48, 48, 0.6));
+}
+
 @media screen and (min-width: 768px) {
   .request-button {
     font-size: 1rem;
   }
   .banner {
-    height: 700px;
+    height: 600px;
+  }
+  .banner-frontpage img {
+    min-height: 600px;
   }
 }
 
