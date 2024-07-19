@@ -6,6 +6,7 @@ $primary-font-colour: #1e2245;
 $secondary-font-colour: #6e707b;
 $main-green: #008c95;
 $main-green-hover: #036167;
+$light-gray: #f0f4f5;
 
 html * {
   font-family: "DM Sans", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
@@ -14,6 +15,8 @@ html * {
 // Custom fonts
 
 $custom-fs-1-125rem: 1.125rem;
+$custom-fs-1-563rem: 1.563rem;
+$custom-fs-1-625rem: 1.625rem;
 $custom-fs-2-125rem: 2.125rem;
 $custom-fs-2-375rem: 2.375rem;
 $custom-fs-3-625rem: 3.625rem;
@@ -25,6 +28,22 @@ $custom-fs-3-625rem: 3.625rem;
 
   @include media-breakpoint-up("lg") {
     font-size: $custom-fs-1-125rem;
+  }
+}
+
+.fs-1-to-1-563 {
+  font-size: 1rem;
+
+  @include media-breakpoint-up("lg") {
+    font-size: $custom-fs-1-563rem;
+  }
+}
+
+.fs-1-625-to-2-375 {
+  font-size: $custom-fs-1-625rem;
+
+  @include media-breakpoint-up("lg") {
+    font-size: $custom-fs-2-375rem;
   }
 }
 
@@ -62,6 +81,10 @@ $custom-fs-3-625rem: 3.625rem;
   font-size: 0.75rem;
 }
 
+.light-gray-background {
+  background: $light-gray;
+}
+
 // Banner
 
 .banner {
@@ -73,6 +96,45 @@ $custom-fs-3-625rem: 3.625rem;
   height: 100%;
   object-fit: cover;
   min-height: 300px;
+}
+
+// Utilities
+
+.border-none {
+  border: none;
+}
+
+// Cards
+
+// Frontpage cards
+
+.frontpage-cards {
+  max-width: 350px;
+  border: none;
+}
+
+.card-image {
+  opacity: 0.3;
+}
+
+.frontpage-cards:hover .card-image {
+  opacity: 0.1;
+  transition: opacity 0.2s ease-out;
+}
+
+.button-white-outline {
+  background: none;
+  color: #fff;
+  border: 2px solid #fff;
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+  display: inline-block;
+  border-radius: 25px;
+}
+
+.button-white-outline:hover {
+  background: rgba(41, 41, 41, 0.7);
+  transition: 0.2s ease-out;
 }
 
 // Buttons
@@ -140,6 +202,12 @@ $custom-fs-3-625rem: 3.625rem;
 }
 
 // Media queries
+
+@media screen and (max-width: 767px) {
+  #contact-form {
+    max-width: 350px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .request-button {

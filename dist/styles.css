@@ -11857,6 +11857,24 @@ html * {
   }
 }
 
+.fs-1-to-1-563 {
+  font-size: 1rem;
+}
+@media (min-width: 992px) {
+  .fs-1-to-1-563 {
+    font-size: 1.563rem;
+  }
+}
+
+.fs-1-625-to-2-375 {
+  font-size: 1.625rem;
+}
+@media (min-width: 992px) {
+  .fs-1-625-to-2-375 {
+    font-size: 2.375rem;
+  }
+}
+
 .fs-2-375-to-3 {
   font-size: 2.375rem;
 }
@@ -11891,6 +11909,10 @@ html * {
   font-size: 0.75rem;
 }
 
+.light-gray-background {
+  background: #f0f4f5;
+}
+
 .banner {
   height: 300px;
 }
@@ -11900,6 +11922,39 @@ html * {
   height: 100%;
   object-fit: cover;
   min-height: 300px;
+}
+
+.border-none {
+  border: none;
+}
+
+.frontpage-cards {
+  max-width: 350px;
+  border: none;
+}
+
+.card-image {
+  opacity: 0.3;
+}
+
+.frontpage-cards:hover .card-image {
+  opacity: 0.1;
+  transition: opacity 0.2s ease-out;
+}
+
+.button-white-outline {
+  background: none;
+  color: #fff;
+  border: 2px solid #fff;
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+  display: inline-block;
+  border-radius: 25px;
+}
+
+.button-white-outline:hover {
+  background: rgba(41, 41, 41, 0.7);
+  transition: 0.2s ease-out;
 }
 
 .request-button {
@@ -11959,6 +12014,11 @@ html * {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(48, 48, 48, 0.6));
 }
 
+@media screen and (max-width: 767px) {
+  #contact-form {
+    max-width: 350px;
+  }
+}
 @media screen and (min-width: 768px) {
   .request-button {
     font-size: 1rem;
