@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet" />
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <link rel="stylesheet" href="dist/styles.css" />
     <title>Flostrand & Knutsen</title>
   </head>
@@ -157,7 +158,7 @@
                 </div>
                 <input type="email" class="form-control light-gray-background border-none fw-bold" id="e-post" placeholder="E-postadresse" />
                 <textarea class="form-control my-4 light-gray-background border-none fw-bold" id="exampleFormControlTextarea1" rows="3" placeholder="Skriv inn prosjektdetaljer"></textarea>
-                <div id="captcha" class="py-2">Captcha kommer her</div>
+                <div class="g-recaptcha pb-3" data-sitekey="YOUR_SITE_KEY"></div>
                 <button type="submit" class="request-button w-100">Send prisforespørsel</button>
               </form>
             </div>
