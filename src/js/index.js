@@ -8,3 +8,5 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
   loadFooter();
 });
+
+Fancybox.bind('[data-fancybox="gallery-metalworks"]', {});

@@ -12014,6 +12014,10 @@ html * {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(48, 48, 48, 0.6));
 }
 
+.thumbnails {
+  max-width: 350px;
+}
+
 .footer-icon img {
   height: 30px;
 }
