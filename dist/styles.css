@@ -12014,9 +12014,19 @@ html * {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(48, 48, 48, 0.6));
 }
 
+.footer-icon img {
+  height: 24px;
+}
+
 @media screen and (max-width: 767px) {
   #contact-form {
     max-width: 350px;
+  }
+  .captcha-wrapper {
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    display: flex; /* Enables flexbox for centering */
+    justify-content: center; /* Centers the captcha horizontally */
   }
 }
 @media screen and (min-width: 768px) {
@@ -12031,6 +12041,9 @@ html * {
   }
   .frontpage-text-content {
     max-width: 75%;
+  }
+  .footer-icon img {
+    height: 36px;
   }
 }
 

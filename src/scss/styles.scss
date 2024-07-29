@@ -201,11 +201,24 @@ $custom-fs-3-625rem: 3.625rem;
   }
 }
 
-// Media queries
+// Icons
+
+.footer-icon img {
+  height: 24px;
+}
+
+// Captcha
 
 @media screen and (max-width: 767px) {
   #contact-form {
     max-width: 350px;
+  }
+
+  .captcha-wrapper {
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    display: flex; /* Enables flexbox for centering */
+    justify-content: center; /* Centers the captcha horizontally */
   }
 }
 
@@ -224,5 +237,9 @@ $custom-fs-3-625rem: 3.625rem;
 
   .frontpage-text-content {
     max-width: 75%;
+  }
+
+  .footer-icon img {
+    height: 36px;
   }
 }
