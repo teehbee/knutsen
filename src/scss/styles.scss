@@ -201,8 +201,12 @@ $custom-fs-3-625rem: 3.625rem;
   }
 }
 
-.thumbnails {
-  max-width: 350px;
+// Image gallery
+
+.thumbnails img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
 }
 
 // Icons
