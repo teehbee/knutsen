@@ -11934,7 +11934,7 @@ html * {
 }
 
 .card-image {
-  opacity: 0.3;
+  opacity: 0.4;
 }
 
 .frontpage-cards:hover .card-image {
@@ -12015,7 +12015,7 @@ html * {
 }
 
 .footer-icon img {
-  height: 24px;
+  height: 30px;
 }
 
 @media screen and (max-width: 767px) {
