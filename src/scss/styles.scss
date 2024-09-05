@@ -215,7 +215,11 @@ $custom-fs-3-625rem: 3.625rem;
   height: 30px;
 }
 
-// Captcha
+// Custom Styling
+
+.about-main-list {
+  list-style-position: inside;
+}
 
 @media screen and (max-width: 767px) {
   #contact-form {

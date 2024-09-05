@@ -12024,6 +12024,10 @@ html * {
   height: 30px;
 }
 
+.about-main-list {
+  list-style-position: inside;
+}
+
 @media screen and (max-width: 767px) {
   #contact-form {
     max-width: 350px;
