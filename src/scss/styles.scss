@@ -239,6 +239,12 @@ $custom-fs-3-625rem: 3.625rem;
   font-weight: 700;
 }
 
+// Footer
+
+.footer-link:hover {
+  font-weight: bold;
+}
+
 @media screen and (max-width: 767px) {
   #contact-form {
     max-width: 350px;
