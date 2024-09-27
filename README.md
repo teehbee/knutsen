@@ -1,4 +1,4 @@
 # knutsen
 
-import { Fancybox } from "@fancyapps/ui";
-import "@fancyapps/ui/dist/fancybox/fancybox.css";
+Statis website for a welding business
+Not complete yet
